@@ -1,11 +1,11 @@
-#JAVA LEARNING
+# JAVA LEARNING
 
-##Installation of Java JDK
+## Installation of Java JDK
 
-##USE Intellij or Visual Studio for IDE
+## USE Intellij or Visual Studio for IDE
 
 
-##Important Notes for Learning
+## Important Notes for Learning
 
 **Primitive data types -** includes byte, short, int, long, float, double, boolean and char
 
