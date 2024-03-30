@@ -27,9 +27,3 @@ or,
 double myDouble = 9.78d;
 
 int myInt = (int) myDouble;
-
-**Java Special Characters**
-
-Backslash (\) is used to add quotes inside quotes such as "This is \"Java\" Learning"
-
-\n is used for new line. \t is used for tab.
