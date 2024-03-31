@@ -33,3 +33,30 @@ int myInt = (int) myDouble;
 Backslash (\) is used to add quotes inside quotes such as "This is \"Java\" Learning"
 
 \n is used for new line. \t is used for tab.
+
+**For Loop**
+
+for (int i = 0; i < 5; i++) {
+
+System.out.println(i);
+
+}
+
+
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+for (String i : cars) {
+
+System.out.println(i);
+
+}
+
+**ARRAY**
+
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+cars[0] = "Opel";
+
+System.out.println(cars[0]);
+
+System.out.println(cars.length);

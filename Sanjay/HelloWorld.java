@@ -15,6 +15,5 @@ public class HelloWorld {
         System.out.println(num1 + num2);
 
         String sentence = "This is Java Learning and Practice";
-        String [] arr =
     }
 }
