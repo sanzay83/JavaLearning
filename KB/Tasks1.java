@@ -1,3 +1,5 @@
+package KB;
+
 import java.util.Scanner;
 
 public class Tasks1 {
@@ -19,7 +21,7 @@ public class Tasks1 {
         String word = "Keeper";
         String reverse = "";
         for(int i = 0; i < word.length(); i++){
-            reverse = word.charAt(i)+reverse;
+            reverse = word.charAt(i) + reverse;
         }
         System.out.println("Given word reverse is " + reverse);
         
