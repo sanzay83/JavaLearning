@@ -12,32 +12,30 @@ public class HelloWorld {
 
         // REVERSE A STRING
         String nonreversed = "Santosh", reversed = "";
-        char ch;
 
         for (int i = 0; i < nonreversed.length(); i++) {
-            ch = nonreversed.charAt(i);
-            reversed = ch + reversed;
+            reversed = nonreversed.charAt(i) + reversed;
         }
         System.out.println(reversed);
 
-    }
+        int side =2;
+        int side2=4;
+        int area = side * side2;
+        // even or odd
+        System.out.println(area);
 
-    // area
-    int side;
-    int side2;
-    int area;area=side*side2;
-    // even or odd
+        // area
+        int[] numarr = { 1, 2, 3, 4, 5 };
 
-    int[] numarr = { 1, 2, 3, 4, 5 };
-
-    for(
-    int i:numberList)
-    {
-        if (i % 2 == 0) {
-            System.out.println(i);
-        } else {
-            System.out.println("odd");
+        for(int i: numarr) {
+            if (i % 2 == 0) {
+                System.out.println(i + " is even");
+            } else {
+                System.out.println(i +" is odd");
+            }
         }
     }
+
+
 
 }

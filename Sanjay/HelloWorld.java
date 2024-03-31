@@ -1,5 +1,7 @@
 package Sanjay;
 
+import java.util.Arrays;
+
 public class HelloWorld {
     public static void main(String []args) {
 
@@ -18,6 +20,7 @@ public class HelloWorld {
         // count no of words in a sentence
         String sentence = "This is Java Learning and Practice";
         String[] arr = sentence.split(" ");
+        System.out.println(Arrays.toString(arr));
         int length = arr.length;
         System.out.println("Total number of words are: " + length);
 
@@ -28,6 +31,7 @@ public class HelloWorld {
         for (int i = sentence.length()-1; i >= 0; i--) {
             result += sentence.charAt(i);
         }
+
         System.out.println(result);
 
         // Sum of array element
