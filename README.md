@@ -60,3 +60,29 @@ cars[0] = "Opel";
 System.out.println(cars[0]);
 
 System.out.println(cars.length);
+
+
+**METHOD**
+
+myMethod() is the name of the method
+
+static means that the method belongs to the Main class and is not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+
+void means that this method does not have a return value. You will learn more about return values later in this chapter
+
+Information can be passed to methods as a parameter. Parameters act as variables inside the method.
+
+Method Overloading having same name but different set of parameters
+
+static int plusMethod(int x, int y) {
+
+  return x + y;
+
+}
+
+static double plusMethod(double x, double y) {
+
+  return x + y;
+  
+}
+
