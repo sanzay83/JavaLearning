@@ -1,9 +1,17 @@
 package Sanjay;
 
+import java.io.IOException;
 import java.util.Arrays;
 
+
 public class HelloWorld {
-    public static void main(String []args) {
+    public static void main(String []args) throws IOException {
+        FileHandeling.saman("saman");
+
+        String s = "dad";
+        int num = 123454321;
+        System.out.println(Palindrom.palindromCheck(s));
+        System.out.println(Palindrom.palindromCheck(num));
 
         System.out.println("Hello World");
 
@@ -56,5 +64,6 @@ public class HelloWorld {
                 System.out.println("Number: " + i + " is odd");
             }
         }
+
     }
 }
