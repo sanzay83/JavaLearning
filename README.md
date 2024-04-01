@@ -64,15 +64,15 @@ System.out.println(cars.length);
 
 **METHOD**
 
-myMethod() is the name of the method
+~ myMethod() is the name of the method
 
-static means that the method belongs to the Main class and is not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+~ static means that the method belongs to the Main class and is not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
 
-void means that this method does not have a return value. You will learn more about return values later in this chapter
+~ void means that this method does not have a return value. You will learn more about return values later in this chapter
 
-Information can be passed to methods as a parameter. Parameters act as variables inside the method.
+~ Information can be passed to methods as a parameter. Parameters act as variables inside the method.
 
-Method Overloading having same name but different set of parameters
+~ Method Overloading having same name but different set of parameters
 
 static int plusMethod(int x, int y) {
 
@@ -85,4 +85,45 @@ static double plusMethod(double x, double y) {
   return x + y;
   
 }
+
+~ Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+
+**File Handeling**
+
+Opening a file to read
+
+import java.io.File;
+
+File myObj = new File("filename.txt");
+
+Writing a file 
+
+import java.io.FileWriter;
+
+FileWriter myWriter = new FileWriter("filename.txt");
+
+myWriter.write("Files in Java might be tricky, but it is fun enough!");
+
+
+Reading a file 
+
+File myObj = new File("filename.txt");
+
+Scanner myReader = new Scanner(myObj);
+      
+while (myReader.hasNextLine()) {
+
+String data = myReader.nextLine();
+
+System.out.println(data);
+        
+}
+
+Deleting file 
+
+File myObj = new File("filename.txt"); 
+
+myObj.delete()
+
+
 
