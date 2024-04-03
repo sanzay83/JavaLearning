@@ -1,3 +1,5 @@
+package KB;
+
 public class Tasks3 {
     public static void main(String[] args) {
         //Checking prime or composite number

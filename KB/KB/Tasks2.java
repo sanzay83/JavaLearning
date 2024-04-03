@@ -1,3 +1,5 @@
+package KB;
+
 import java.lang.Math;
 
 public class Tasks2 {  
