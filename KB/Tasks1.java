@@ -3,15 +3,16 @@ package KB;
 import java.util.Scanner;
 
 public class Tasks1 {
-    /**
+    /*
      * @param args
      */
     public static void main (String[] args) { 
+        ATM obj = new ATM();
+
         //Adding two number
         int a = 10;
         int b = 25;
         System.out.println("The sum of a and b is " + Integer.sum(a,b));
-
         //Count words
         String sen = "Fiancial situation does not improve.";
         String[] splt = sen.split(" ");
@@ -36,7 +37,7 @@ public class Tasks1 {
         //Area of rectangle
         int l = 5;
         int w = 6;
-        int area = l*w;
+        int area = l * w;
         System.out.println("Area of rectangle is " + area);
 
         //Even or odd number
@@ -47,5 +48,16 @@ public class Tasks1 {
             System.out.println("Odd number.");
         }
 
+        //ATM
+        System.out.print("Enter your pin: ");
+        Scanner sc = new Scanner(System.in);
+        int pin = sc.nextInt();
+        sc.close();
+        if (pin == 1234){
+            obj.machine();
+        }
+        else{
+            System.out.println("Wrong pin.");
+        }
     }
 }
