@@ -50,12 +50,12 @@ public class Tasks1 {
         System.out.print("Enter your pin: ");
         Scanner sc = new Scanner(System.in);
         int pin = sc.nextInt();
-        sc.close();
         if (pin == 1234){
             obj.machine();
         }
         else{
             System.out.println("Wrong pin.");
         }
+        sc.close();
     }
 }
