@@ -1,5 +1,7 @@
 package KB;
 
+
+
 import java.util.Scanner;
 
 public class Tasks1 {
