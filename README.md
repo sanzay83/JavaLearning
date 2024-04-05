@@ -18,15 +18,19 @@ https://www.oracle.com/java/technologies/downloads/
 
 **Type Casting**
 
+Implicit (Automatic) VS Explicit (Narrowing)
+
+Implicit => Converting smaller datatype to larger will be automatic. Such as byte->short->int->long->float->double
+
 int myInt = 9;
 
 double myDouble = myInt;
 
-or,
+Explicit => Converting larger datatype to smaller needs to be defined. Such as byte<-short<-int<-long<-float<-double
 
 double myDouble = 9.78d;
 
-int myInt = (int) myDouble;
+int myInt = (int) myDouble; Note: When type casting double to int it will lose the value after decimal.
 
 **Java Special Characters**
 
