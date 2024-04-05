@@ -34,6 +34,18 @@ public class HelloWorld {
                 System.out.println(i +" is odd");
             }
         }
+
+
+        //prime composite
+
+
+
+
+
+
+
+
+
     }
 
 
