@@ -40,10 +40,27 @@ public class HCFLCM {
         return lcm;
     }
 
+    public static int LCMv2(int firstNum, int secondNum) {
+        boolean flag = true;
+        int lcm = 0;
+        int count = 1;
+        while (flag) {
+            int x = firstNum * count;
+            if (x % secondNum == 0) {
+                lcm = x;
+                flag = false;
+            } else {
+                count++;
+            }
+        }
+        return lcm;
+    }
+
     public static void main(String[] args) {
         int firstNum = 8, secondNum = 18;
         System.out.println(HCF(firstNum, secondNum));
         System.out.println(LCM(firstNum, secondNum));
+        System.out.println(LCMv2(firstNum, secondNum));
         System.out.println();
     }
 }
