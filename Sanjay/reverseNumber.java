@@ -7,10 +7,8 @@ public class reverseNumber {
 
     public static int reverse(int num) {
         int rev = 0;
-        int last;
         while (num > 0) {
-            last = num % 10;
-            rev = rev * 10 + last;
+            rev = rev * 10 + (num % 10);
             num /= 10;
         }
         return rev;
