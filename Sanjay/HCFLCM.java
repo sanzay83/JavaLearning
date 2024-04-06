@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class HCFLCM {
     public static int HCF(int firstNum, int secondNum) {
-        int length = Math.max(firstNum, secondNum);
+        int length = Math.min(firstNum, secondNum);
         //ArrayList<Integer> arr = new ArrayList<Integer>();
         int hcf = 1;
-        for (int num = 2; num <= length / 2; num++) {
+        for (int num = 2; num <= length; num++) {
             if (firstNum % num == 0 && secondNum % num == 0) {
                 hcf = num;
             }
