@@ -1,6 +1,6 @@
 package Sanjay;
 
-public class Palindrom {
+public class Palindrome {
 
     public static boolean palindromCheck(String s) {
         String[] arr = s.split("");
