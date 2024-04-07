@@ -12,23 +12,21 @@ public class arrayExercises {
     }
 
     private static String maxmin(int[] arr) {
-      int[] mm = new int[2] ;
+      int[] mm = new int[2];
+      int min_pointer = 0;
+      int max_pointer = 0;
 
-    for (int i = 0; i<arr.length; i++){
-        for (int j = 0, j<arr.length; j++){
-
-
-
-
+    for (int i = 1; i<arr.length; i++){
+        if(arr[min_pointer] > arr[i]){
+            min_pointer = i;
         }
-
-
-
-
-
+        if(arr[max_pointer] < arr[i]){
+            max_pointer = i;
+        }
     }
-
-      return Arrays.toString(mm);
+    mm[0] = arr[min_pointer];
+    mm[1] = arr[max_pointer];
+    return Arrays.toString(mm);
     }
 
     public static int noOfOcc(int[] arr, int search){
