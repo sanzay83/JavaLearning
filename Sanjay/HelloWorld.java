@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class HelloWorld {
     public static void main(String []args) throws IOException {
         FileHandeling.saman("saman");
-
+        //String
         String s = "dad";
         int num = 123454321;
         System.out.println(Palindrome.palindromCheck(s));
