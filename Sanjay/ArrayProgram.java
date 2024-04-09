@@ -10,12 +10,13 @@ public class ArrayProgram {
         System.out.println("The given array arr2 is "+ Arrays.toString(arr2));
         SumAndAverage(arr);
         CheckNoOfOccurrence(arr, 1);
-        MaxAndMinimum(arr);
+        int[] maxMin = FindMaximumMinimum.MaxAndMinimum(arr);
+        System.out.println("The maximum no is " + maxMin[1] +" and The minimum no is " + maxMin[0]);
         CheckIfSorted(arr);
-        DeleteNumber(arr, 2);
-        System.out.println("The reverse of the array is "+Arrays.toString(ReverseArray(arr)));
-        CheckPalindrom(arr);
-        MergeArray(arr, arr2);
+        System.out.println("Array after removing number 2: " + Arrays.toString(DeleteItemInArray.DeleteNumber(arr, 2)));
+        System.out.println("The reverse of the array is "+Arrays.toString(ReverseArray.reverseArray(arr)));
+        CheckArrayPalindrome.CheckPalindrome(arr);
+        System.out.println("Sort and Merge Array" + Arrays.toString(MergeSortedArray.MergeArray(Sort.Sorted(arr), Sort.Sorted(arr2))));
         int[][] twoDArray = {{4,3,2},{5,7,1}};
         SearchElement(twoDArray);
         SumAndAverage2D(twoDArray);
@@ -67,68 +68,6 @@ public class ArrayProgram {
         }
     }
 
-    private static void MergeArray(int[] arr, int[] arr2) {
-        int[] mergedArray = new int[arr.length+arr2.length];
-        int count = 0;
-        for(int each: arr){
-            mergedArray[count] = each;
-            count++;
-        }
-        for(int each: arr2){
-            mergedArray[count] = each;
-            count++;
-        }
-        System.out.println("Merged Array is "+Arrays.toString(mergedArray));
-    }
-
-
-    private static void CheckPalindrom(int[] arr) {
-        int[] rev = ReverseArray(arr);
-        boolean flag = true;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] != rev[i]){
-                flag = false;
-                break;
-            }
-        }
-        if (flag) {
-            System.out.println("It is Palindrome Array");
-        } else {
-            System.out.println("It is not Palindrome Array");
-        }
-    }
-
-    private static int[] ReverseArray(int[] arr) {
-        int length = arr.length;
-        int rev[] = new int[length];
-        int pos = length-1;
-        for(int each: arr){
-            rev[pos] = each;
-            pos--;
-        }
-
-        return rev;
-
-    }
-
-    private static void DeleteNumber(int[] arr, int i) {
-        int length = 0;
-        for(int each: arr){
-            if(i != each){
-                length += 1;
-            }
-        }
-        int[] newArr = new int[length];
-        length = 0;
-        for(int each: arr){
-            if(i != each){
-                newArr[length] = each;
-                length++;
-            }
-        }
-        System.out.println("After removing "+i+" new array is "+ Arrays.toString(newArr));
-    }
-
     private static void CheckIfSorted(int[] arr) {
         boolean flag = true;
         int last = arr[0];
@@ -142,21 +81,7 @@ public class ArrayProgram {
         else System.out.println("It is not sorted");
     }
 
-    private static void MaxAndMinimum(int[] arr) {
-        int min = arr[0];
-        int max = arr[0];
-        for(int each: arr){
-            if(each < min){
-                min = each;
-            }
-            if(each > max){
-                max = each;
-            }
-        }
-        System.out.println("The minimum number is "+min);
-        System.out.println("The minimum number is "+max);
 
-    }
 
     private static void CheckNoOfOccurrence(int[] arr, int i) {
         int count = 0;

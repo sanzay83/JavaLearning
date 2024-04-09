@@ -10,8 +10,8 @@ public class HelloWorld {
 
         String s = "dad";
         int num = 123454321;
-        System.out.println(Palindrom.palindromCheck(s));
-        System.out.println(Palindrom.palindromCheck(num));
+        System.out.println(Palindrome.palindromCheck(s));
+        System.out.println(Palindrome.palindromCheck(num));
 
         System.out.println("Hello World");
 

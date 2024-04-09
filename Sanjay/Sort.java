@@ -1,7 +1,5 @@
 package Sanjay;
 
-import java.util.Arrays;
-
 public class Sort {
 
     public static int[] Sorted(int[] arr) {
