@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class ReverseArray {
     public static int[] reverseArray(int[] arr) {

@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class FindMaximumMinimum {
     public static int[] MaxAndMinimum(int[] arr) {

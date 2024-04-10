@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 import java.io.IOException;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class AdditionDSA {
     public static void main(String[] args) {

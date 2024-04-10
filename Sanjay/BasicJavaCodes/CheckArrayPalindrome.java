@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class CheckArrayPalindrome {
     public static void CheckPalindrome(int[] arr) {
