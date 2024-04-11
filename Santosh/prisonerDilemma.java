@@ -17,19 +17,19 @@ public class prisonerDilemma {
 
 
         while (rounds <= 20) {
-            gameLogic();
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Cooperate ot Defect. c/d");
+            String choice = myObj.nextLine();
+            gameLogic(choice);
             rounds++;
+
         }
         System.out.println("You won:" + score[0]);
         System.out.println("Comp won:" + score[1]);
 
     }
 
-    public static void gameLogic() {
-
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Cooperate ot Defect. c/d");
-        String choice = myObj.nextLine();
+    public static void gameLogic(String choice) {
 
         if (choice.equals("c") && coop) {
             scorecounter(3, 3);
@@ -45,6 +45,8 @@ public class prisonerDilemma {
         }
 
     }
+
+    //public static void gameLogic2(String choice) {}
 
     public static void scorecounter(int user_wins, int comp_wins) {
         score[0] += user_wins;

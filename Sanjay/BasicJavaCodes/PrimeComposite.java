@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class PrimeComposite {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package Sanjay;
-
-import java.util.Arrays;
+package Sanjay.BasicJavaCodes;
 
 public class Sort {
 

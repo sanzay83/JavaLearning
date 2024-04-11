@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -7,11 +7,11 @@ import java.util.Arrays;
 public class HelloWorld {
     public static void main(String []args) throws IOException {
         FileHandeling.saman("saman");
-
+        //String
         String s = "dad";
         int num = 123454321;
-        System.out.println(Palindrom.palindromCheck(s));
-        System.out.println(Palindrom.palindromCheck(num));
+        System.out.println(Palindrome.palindromCheck(s));
+        System.out.println(Palindrome.palindromCheck(num));
 
         System.out.println("Hello World");
 

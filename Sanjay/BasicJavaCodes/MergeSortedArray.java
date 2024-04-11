@@ -1,4 +1,4 @@
-package Sanjay;
+package Sanjay.BasicJavaCodes;
 
 public class MergeSortedArray {
     public static int[] MergeArray(int[] arr, int[] arr2) {
