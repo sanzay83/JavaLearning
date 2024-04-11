@@ -1,5 +1,7 @@
 package Sanjay;
 
+import java.util.Arrays;
+
 public class AdditionDSA {
     public static void main(String[] args) {
         int[] a = {9, 8, 9, 9};
@@ -15,10 +17,11 @@ public class AdditionDSA {
             } else {
                 carry = 0;
             }
+            
             sum[i] = temp;
+            System.out.println(carry + "" + Arrays.toString(sum));
         }
-        if(carry > 0) {
-            System.out.print(carry);
+        if(carry > 0) { System.out.print(carry);
         }
         for (int element : sum) {
             System.out.print(element);

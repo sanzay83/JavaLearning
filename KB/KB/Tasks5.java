@@ -22,25 +22,21 @@ public class Tasks5 {
         for (int i = 0; i < arrcopy.length; i++) {
             if (arrcopy[i] != value) {
                 int count = 1;
-                boolean duplicate = false;
                 for (int j = i + 1; j < arrcopy.length; j++) {
                     if (arrcopy[i] == arrcopy[j]) {
                         arrcopy[j] = value;
-                        duplicate = true;
                         count++;
                     }
                 }
-                if (duplicate) {
-                    System.out.println(arrcopy[i] + " occurs " + count + " time.");
-                }
+                System.out.println(arrcopy[i] + " occurs " + count + " time.");
             }
+
         }
     }
 
     public static void minandmax(int[] arr) {
         int min = arr[0];
         int max = arr[0];
-        System.out.println(Arrays.toString(arr));
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -71,14 +67,47 @@ public class Tasks5 {
         }
     }
 
+    public static int[] reversearr(int[] arr) {
+        int[] arr2 = new int[arr.length];
+        int lastposition = arr2.length - 1;
+        for (int i = 0; i < arr.length; i++) {
+            arr2[lastposition] = arr[i];
+            lastposition--;
+        }
+        return arr2; 
+    }
+
+    public static void palindromearr(int[] arr) {
+        int[] arr3 = reversearr(arr);
+
+        boolean isEqual = false;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == arr3[i]){
+                isEqual = true;
+            }
+            else
+            {
+                isEqual = false;
+                break;
+            }
+        }
+        if(isEqual){
+            System.out.println("Palindrome Array");
+        } else {
+            System.out.println("Not a Palindrome Array");
+        }
+    }
+
     public static void main(String[] args) {
-        int[] arr = { 2, 2, 3, 4, 3, 5, 5, 6, 9, 2, 2 };
+        int[] arr = { 2, 3, 4, 5, 4, 3, 2 };
 
         System.out.println("Array: " + Arrays.toString(arr));
-        
+
         sumandavg(arr);
         numofoccur(arr);
         minandmax(arr);
         checksort(arr);
+        System.out.println("Reveresed Array: " + Arrays.toString(reversearr(arr)));
+        palindromearr(arr);
     }
 }
