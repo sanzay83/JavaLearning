@@ -1,6 +1,6 @@
 package Sanjay.BasicJavaCodes;
 
-public class palindrome {
+public class palindromeInterview {
     public static void main(String[] args) {
         String abc = "acba";
         String rev = "";
