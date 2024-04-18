@@ -129,5 +129,25 @@ File myObj = new File("filename.txt");
 
 myObj.delete()
 
+**String Formatting**
+
+System.out.printf("Hello %s and number is %d %n", name, num);
+
+%s is for string
+        
+%d is for number
+        
+%f is for number
+        
+%S capital s gives capital name
+
+%10s gives 10 spaces before string
+        
+%-10s gives 10 spaces after
+        
+%, comma to give comma in number
+        
+%0 gives 0 in number in front
+
 
 
