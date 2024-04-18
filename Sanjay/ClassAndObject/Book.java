@@ -1,53 +1,41 @@
 package Sanjay.ClassAndObject;
 
-import java.sql.SQLOutput;
-
 public class Book {
-    String title, author, isbn;
-    static int totalNoOfBooks;
-    boolean isBorrowed;
+    private static int totalNoOfBooks;
 
     static {
-        totalNoOfBooks=0;
+        System.out.println("inside static blocks");
+        totalNoOfBooks = 0;
     }
 
+    private String title, author, isbn;
+    private boolean isBorrowed;
+
     {
+        System.out.println("inside blocks");
         totalNoOfBooks++;
     }
-    Book(String isbn, String title, String author){
+
+    Book(String isbn, String title, String author) {
         this.isbn = isbn;
-        this.title= title;
+        this.title = title;
         this.author = author;
     }
 
-    Book(String isbn){
+    Book(String isbn) {
         this(isbn, "Unknown", "Unknown");
     }
 
-    static int getTotalNoOfBooks(){
+    static int getTotalNoOfBooks() {
         return totalNoOfBooks;
     }
 
-    void borrowBook(){
-        if (isBorrowed){
-            System.out.println("Book is already borrowed");
-        } else {
-            this.isBorrowed = true;
-            System.out.println("Enjoy the book" + this.title);
-        }
-    }
-
-    void returnBook(){
-        if (isBorrowed) {
-            this.isBorrowed = false;
-            System.out.println("Thank you for reading this book.");
-        } else {
-            System.out.println("This book is already in the library.");
-        }
-    }
-
     public static void main(String[] args) {
-        Book designOfThings = new Book("1", "Design", "Author");
+        Student st = new Student("San", 27);
+        System.out.println(Book.getTotalNoOfBooks());
+        Book designOfThings = new Book("1", " Design", "Author");
+        System.out.println(Book.getTotalNoOfBooks());
+        designOfThings.borrowBook();
         Book myBook = new Book("2");
         System.out.println(Book.getTotalNoOfBooks());
         designOfThings.borrowBook();
@@ -55,5 +43,23 @@ public class Book {
         designOfThings.borrowBook();
         designOfThings.returnBook();
         designOfThings.returnBook();
+    }
+
+    private void borrowBook() {
+        if (isBorrowed) {
+            System.out.println("Book is already borrowed");
+        } else {
+            this.isBorrowed = true;
+            System.out.println("Enjoy the book" + this.title);
+        }
+    }
+
+    private void returnBook() {
+        if (isBorrowed) {
+            this.isBorrowed = false;
+            System.out.println("Thank you for reading this book.");
+        } else {
+            System.out.println("This book is already in the library.");
+        }
     }
 }

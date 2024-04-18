@@ -4,7 +4,7 @@ public class Student {
     final String name;  // final can only be assigned once in constructor only
     final int age;
 
-    public Student(String name, int age) {
+    protected Student(String name, int age) {
         this.name = name;
         this.age = age;
     }

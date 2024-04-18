@@ -4,7 +4,7 @@ public class UserDetails {
     String fname, lname, address;
     int accountNumber, ssn;
 
-    UserDetails(String fname, String lname, int ssn) {
+    public UserDetails(String fname, String lname, int ssn) {
         this.ssn = ssn;
         this.fname = fname;
         this.lname = lname;
@@ -18,7 +18,6 @@ public class UserDetails {
 
 
     // up
-
 
     UserDetails() {
         this(123);

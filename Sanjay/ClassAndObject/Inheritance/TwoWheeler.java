@@ -1,0 +1,17 @@
+package Sanjay.ClassAndObject.Inheritance;
+
+public class TwoWheeler extends Vehicles {
+    boolean stand;
+
+    public void setNoOfWheels(int brand) {
+        super.setNoOfWheels(brand);
+    }
+
+    public boolean getStand() {
+        return this.stand;
+    }
+
+    public void setStand(boolean stand) {
+        this.stand = stand;
+    }
+}

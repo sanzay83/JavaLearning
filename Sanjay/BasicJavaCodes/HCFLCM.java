@@ -2,6 +2,7 @@ package Sanjay.BasicJavaCodes;
 
 import java.util.ArrayList;
 
+
 public class HCFLCM {
     public static int HCF(int firstNum, int secondNum) {
         int length = Math.min(firstNum, secondNum);

@@ -2,7 +2,6 @@ package Santosh.bankofamerica;
 
 public class Bank {
 
-
     public static void main(String[] args) {
 
         String fname = "Santosh", lname = "Humagain";
