@@ -6,6 +6,11 @@ public class AnagramChecker {
     public static void main(String[] args) {
         String firstString = "Racae".toLowerCase();
         String secondString = "Carae".toLowerCase();
+        if (firstString == secondString) {
+            System.out.println(true);
+        }
+
+        System.out.println(firstString.split(""));
 
         char[] firstArr = firstString.toCharArray();
         char[] secondArr = secondString.toCharArray();
@@ -14,6 +19,7 @@ public class AnagramChecker {
         Arrays.sort(secondArr);
 
         if (firstString.length() == secondString.length()) {
+
             if (Arrays.equals(firstArr, secondArr)) {
                 System.out.println(true);
             }

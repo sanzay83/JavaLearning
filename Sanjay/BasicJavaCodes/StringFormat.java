@@ -4,11 +4,12 @@ public class StringFormat {
 
     public static void main(String[] args) {
         String name = "Sanjay";
-        int num = 1200;
+        int num = 12000000;
+
         System.out.printf("Hello %s and number is %d %n", name, num);
         System.out.printf("Hello %S and number is %010d %n", name, num);
         System.out.printf("Hello %S and number is %,d %n", name, num);
-        System.out.printf("Hello %S and number is %-10d spaces", name, num);
+        System.out.printf("Hello %S and number is %-15d spaces", name, num);
 
         /*
         %s is for string
