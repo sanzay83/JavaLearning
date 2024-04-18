@@ -15,6 +15,7 @@ public class HCFLCM {
         return hcf;
     }
 
+
     public static int LCM(int firstNum, int secondNum) {
         int lcm = 1;
         ArrayList<Integer> arr = new ArrayList<Integer>();

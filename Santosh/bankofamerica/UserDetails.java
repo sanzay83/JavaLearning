@@ -8,10 +8,22 @@ public class UserDetails {
         this.ssn = ssn;
         this.fname = fname;
         this.lname = lname;
-        //special type of method
-        //named as class name
+    }
+
+    UserDetails(int acc) {
+        this("santosh", "huma", 123456897);
+        this.accountNumber = acc;
 
     }
+
+
+    // up
+
+
+    UserDetails() {
+        this(123);
+    }
+
 
     public static void getAccountNumber() {
         System.out.println("test");
@@ -30,6 +42,12 @@ public class UserDetails {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public String getfname() {
+        return fname;
+    }
+
+
     //identification
     //fname lname
     //address

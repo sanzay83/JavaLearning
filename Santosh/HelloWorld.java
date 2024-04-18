@@ -1,5 +1,7 @@
 package Santosh;
 
+import Sanjay.BasicJavaCodes.HCFLCM;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -8,8 +10,7 @@ public class HelloWorld {
         sum = a + b;
         System.out.println(sum);
 
-        // count words (do later)
-
+        System.out.println(HCFLCM.HCF(5, 2));
         // REVERSE A STRING
         String nonreversed = "Santosh", reversed = "";
 
@@ -18,20 +19,20 @@ public class HelloWorld {
         }
         System.out.println(reversed);
 
-        int side =2;
-        int side2=4;
+        int side = 2;
+        int side2 = 4;
         int area = side * side2;
         // even or odd
         System.out.println(area);
 
         // area
-        int[] numarr = { 1, 2, 3, 4, 5 };
+        int[] numarr = {1, 2, 3, 4, 5};
 
-        for(int i: numarr) {
+        for (int i : numarr) {
             if (i % 2 == 0) {
                 System.out.println(i + " is even");
             } else {
-                System.out.println(i +" is odd");
+                System.out.println(i + " is odd");
             }
         }
 
@@ -39,15 +40,7 @@ public class HelloWorld {
         //prime composite
 
 
-
-
-
-
-
-
-
     }
-
 
 
 }

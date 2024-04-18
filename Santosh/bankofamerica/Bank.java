@@ -7,7 +7,11 @@ public class Bank {
 
         String fname = "Santosh", lname = "Humagain";
         int ssn = 123456789;
-        UserDetails ud = new UserDetails(fname, lname, ssn);
+
+        UserDetails ud = new UserDetails("Santosh", lname, ssn);
+        UserDetails udd = new UserDetails(321);
+        UserDetails udw = new UserDetails();
+        System.out.println(udd.getfname());
 
         ud.setAddress("texas");
         ud.setAccountNumber(123456789);
