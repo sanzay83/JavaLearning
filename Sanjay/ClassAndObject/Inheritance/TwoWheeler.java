@@ -3,6 +3,10 @@ package Sanjay.ClassAndObject.Inheritance;
 public class TwoWheeler extends Vehicles {
     boolean stand;
 
+    TwoWheeler() {
+        setNoOfWheels(2);
+    }
+
     public void setNoOfWheels(int brand) {
         super.setNoOfWheels(brand);
     }

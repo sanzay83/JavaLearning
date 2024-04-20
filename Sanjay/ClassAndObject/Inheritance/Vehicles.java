@@ -1,6 +1,6 @@
 package Sanjay.ClassAndObject.Inheritance;
 
-public class Vehicles extends Object {
+public class Vehicles {
     // Car, motorbike, cycle, truck
     private int noOfWheels, noOfDoors, sideMirrors, maxSpeed;
     private String modelNumber, brand;
