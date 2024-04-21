@@ -1,2 +1,5 @@
-package Sanjay.ClassAndObject;public interface Flyable {
+package Sanjay.ClassAndObject.Flyable;
+
+public interface Flyable {
+    void fly();
 }

@@ -1,17 +1,9 @@
 package Sanjay.ClassAndObject.Abstracts;
 
 public class Circle extends Shape {
-    private double radiusInCms;
+    private final double radiusInCms;
 
     public Circle(double radiusInCms) {
-        this.radiusInCms = radiusInCms;
-    }
-
-    public double getRadiusInCms() {
-        return radiusInCms;
-    }
-
-    public void setRadiusInCms(double radiusInCms) {
         this.radiusInCms = radiusInCms;
     }
 

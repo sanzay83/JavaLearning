@@ -1,2 +1,13 @@
-package Sanjay.ClassAndObject.Flyable;public class Bird {
+package Sanjay.ClassAndObject.Flyable;
+
+public abstract class Bird implements Flyable {
+    private final String breed;
+
+    public Bird(String breed) {
+        this.breed = breed;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
 }
