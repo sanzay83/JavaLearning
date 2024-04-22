@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject;
+package Sanjay.ClassAndObject.General;
 
 public class EmployeeMain {
     public static void main(String[] args) {

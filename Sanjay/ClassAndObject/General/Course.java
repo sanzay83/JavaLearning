@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject;
+package Sanjay.ClassAndObject.General;
 
 public class Course {
     static int maxCapacity = 100;

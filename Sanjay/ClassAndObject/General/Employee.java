@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject;
+package Sanjay.ClassAndObject.General;
 
 import java.util.Objects;
 

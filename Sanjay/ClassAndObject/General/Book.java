@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject;
+package Sanjay.ClassAndObject.General;
 
 public class Book {
     private static int totalNoOfBooks;

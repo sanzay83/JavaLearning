@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject;
+package Sanjay.ClassAndObject.General;
 
 public class Student {
     final String name;  // final can only be assigned once in constructor only
