@@ -2,18 +2,25 @@ package Sanjay.ClassAndObject.Polymorphism;
 
 public class MainTransportation {
     public static void main(String[] args) {
-        Car car = new Car();
+        // Vehicle object cannot be created because vehicle is abstract
         // Vehicle vehicle = new Vehicle();
+
+        // Creating a car object
+        Car car = new Car();
+        // Creating a plane object
         Plane plane = new Plane();
 
+        // calling function with Vehicle object casting
         castTest(plane);
         castTest(car);
-        // Vehicle newCar = new Car();
+
+        // Creating car object using vehicle reference
+        Vehicle newCar = new Car();
         // Car newVehicle = (Car) new Vehicle();
+        newCar.start();
     }
 
     private static void castTest(Vehicle veh) {
-        // Car carVehicle = (Car) veh;
 
         veh.start();
     }
