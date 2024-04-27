@@ -8,7 +8,7 @@ public class RemoveDuplicateInArray {
         System.out.println(Arrays.toString(removeDuplicate(arr)));
     }
 
-    private static int[] removeDuplicate(int[] arr) {
+    public static int[] removeDuplicate(int[] arr) {
         int[] newArr = new int[arr.length];
         int count = 0;
         for (int each : arr) {
