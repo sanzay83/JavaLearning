@@ -1,4 +1,4 @@
-package Sanjay.Topics.VariableArguments;
+package Sanjay.Topics.VariableArgumentsAndWrapperClasses;
 
 public class VariableArguments {
     public static void main(String[] args) {
