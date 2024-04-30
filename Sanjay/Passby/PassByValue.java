@@ -1,4 +1,4 @@
-package Sanjay.ClassAndObject.Passby;
+package Sanjay.Passby;
 
 public class PassByValue {
     public static void main(String[] args) {
@@ -10,6 +10,5 @@ public class PassByValue {
 
     public static int add(int a, int b) {
         return a + b;
-
     }
 }

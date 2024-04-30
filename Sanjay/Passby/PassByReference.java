@@ -1,12 +1,13 @@
-package Sanjay.ClassAndObject.Passby;
+package Sanjay.Passby;
 
 public class PassByReference {
     public static void main(String[] args) {
-        Point first = new Point(4, 8);
+        int a = 4;
+        int b = 8;
+        Point first = new Point(a, b);
         System.out.println("first: " + first);
         move(first);
         System.out.println("first: " + first);
-
     }
 
     public static void move(Point p) {

@@ -7,6 +7,8 @@ public abstract class Bird implements Flyable {
         this.breed = breed;
     }
 
+    public abstract String speak();
+
     public String getBreed() {
         return breed;
     }
