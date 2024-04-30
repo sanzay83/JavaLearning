@@ -1,6 +1,6 @@
 package Santosh;
 
-import Sanjay.BasicJavaCodes.HCFLCM;
+import Sanjay.JavaCodesChallenges.HCFLCM;
 
 public class HelloWorld {
     public static void main(String[] args) {
