@@ -30,11 +30,12 @@ public class SwapStringToGetGreatest {
             }
             System.out.println(Arrays.toString(numbers));
         }
+        StringBuilder result = new StringBuilder();
         for (char i : numbers) {
-            System.out.print(i);
+            result.append(i);
         }
 
 
-        return "";
+        return result.toString();
     }
 }
