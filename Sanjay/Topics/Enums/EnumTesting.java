@@ -5,5 +5,6 @@ public class EnumTesting {
         TrafficLights color = TrafficLights.RED;
         Grade grade = Grade.A;
         System.out.println(color);
+        System.out.println(grade);
     }
 }
