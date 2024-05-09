@@ -1,5 +1,6 @@
 package Santosh.bankofamerica;
 
+
 public class Accounts {
     int balance;
 
