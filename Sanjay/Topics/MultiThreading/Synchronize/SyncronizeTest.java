@@ -7,7 +7,6 @@ public class SyncronizeTest {
         UpdateThread t2 = new UpdateThread(counter);
         long startTime = System.currentTimeMillis();
 
-
         try {
             t1.start();
             t2.start();
