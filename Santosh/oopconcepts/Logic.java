@@ -3,43 +3,55 @@ package Santosh.oopconcepts;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Logic {
-    public static void addNote(String note) {
+    public static void addNote(String note, String filename) {
+
         try {
             FileWriter writenote = new FileWriter("Notes.txt", true);
-            writenote.append(DateUtil.aajaKoDin() + "," + note + "\n");
-            writenote.close();
-
+            FileWriter writeTnote = new FileWriter("TNotes.txt", true);
+            FileWriter writeEnote = new FileWriter("ENotes.txt", true);
+            if (filename.equals("note")) {
+                writenote.append(DateUtil.aajaKoDin() + "," + note + "\n");
+                writenote.close();
+            } else if (filename.equals("temp")) {
+                writeTnote.append(DateUtil.aajaKoDin() + "," + note + "\n");
+                writeTnote.close();
+            } else {
+                writeEnote.append(DateUtil.aajaKoDin() + "," + note + "\n");
+                writeEnote.close();
+            }
         } catch (IOException e) {
-            System.out.println("error");
-        }
-    }
-
-    public static void addExpiredNote(String note) {
-        try {
-            FileWriter writenote = new FileWriter("ExpiredNotes.txt", true);
-            writenote.append(DateUtil.aajaKoDin() + "," + note + "\n");
-            writenote.close();
-
-        } catch (IOException e) {
-            System.out.println("error");
+            throw new RuntimeException(e);
         }
     }
 
     //get notes from the db
     public static void checkNotes() {
-        //read each line
-        //check with DateUtil if agenda is expired or not
-        // if(DateUtil.aaja/7 > getDateFromNote/7){
-        // add to expired}
-        //else{
-        // write to new temp file}
-        //Store expired in an "expired" db
-        //
 
-        //after all validation, delete old db with active and expired agendas
-        //refactor temp file to be the new db
+        //read each line
+        try {
+            Scanner s = new Scanner(new File("Notes.txt"));
+            while (s.hasNext()) {
+                //read each line
+                String[] noteParts = s.nextLine().split(",");
+                if ((Integer.parseInt(noteParts[0]) / 7) == (Integer.parseInt(DateUtil.aajaKoDin()) / 7)) {
+                    addNote(noteParts[1], "temp");
+                } else {
+                    addNote(noteParts[1], "");
+                }
+            }
+
+            //after all validation, delete old db with active and expired agendas
+            //refactor temp file to be the new db
+
+        } catch (IOException e) {
+            System.out.println("error");
+        }
+
+
+
 
     }
 
@@ -49,26 +61,16 @@ public class Logic {
 
     public static void getExpiredNotes() {
         //read each line
-        //check with DateUtil if note is expired or not
-        //OPTIONAL: Store expired in an "expired" db
-        // print not expired notes
+        //print notes
 
     }
 
 
-    // file ma note lekhne kaam esle garxa
     public static void createNote() {
-        try {
-            File myObj = new File("notes.txt");
-            if (myObj.createNewFile()) {
-                System.out.println("File created: " + myObj.getName());
-            } else {
-                System.out.println("File already exists.");
-            }
-        } catch (
-                IOException e) {
-            System.out.println("error");
-        }
+        File myDb = new File("Notes.txt");
+        File myTempDb = new File("TNotes.txt");
+        File myExpiredDb = new File("ENotes.txt");
+
     }
 }
 // file xa ki nai check garne

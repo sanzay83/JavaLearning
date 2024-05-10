@@ -1,5 +1,7 @@
 package Santosh.oopconcepts;
 
+import java.util.Scanner;
+
 public class NotesMain {
     public static void main(String[] args) {
         //create a note file to store notes if it doesnt exist at first run
@@ -12,18 +14,12 @@ public class NotesMain {
         //Prints expired agendas
         System.out.println("Expired agendas");
         Logic.getExpiredNotes();
+        
 
-
-        //notes display garne
-        System.out.println(5 / 7);
-        System.out.println(8 / 7);
-        System.out.println(15 / 7);
-        System.out.println(22 / 7);
-
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("type a TODO and press enter");
-//        String note = sc.nextLine();
-//        Logic.addNote(note);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("type a TODO and press enter");
+        String note = sc.nextLine();
+        Logic.addNote(note, "note");
 
 
 //        String aaja;
