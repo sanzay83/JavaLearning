@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileHandlingV2 {
     public static void main(String[] args) {
-        String filename = "java.txt";
+        String filename = "./Sanjay/java.txt";
 
         try (FileWriter writer = new FileWriter(filename);) {
             writer.write("This is test file.");
